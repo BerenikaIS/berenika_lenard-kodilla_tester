@@ -1,7 +1,13 @@
 public class Loops {
-    public static void main(String[] args) {
-        for (int i = 0; i <= 10; i++) {
-            System.out.println(i);
+    public int Loops(int max) {
+        Random random = new Random();
+        int result = 0;
+        int sum = 0;
+        while (sum < max) {
+            int temp = random.nextInt(10);
+            sum = sum + temp;
+            result++;
         }
+        return result;
     }
 }
